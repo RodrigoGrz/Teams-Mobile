@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import theme from './src/theme';
-import { Groups } from '@screens/Groups';
+import { NewGroup } from '@screens/NewGroup';
 import { Loading } from '@components/Loading';
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   );
 }
